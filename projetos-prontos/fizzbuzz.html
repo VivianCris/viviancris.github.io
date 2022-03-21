@@ -1,0 +1,47 @@
+  <script>
+
+    function skipLine() {
+
+      document.write("<br>");
+
+    }
+
+    function show(phrase) {
+
+      document.write(phrase);
+
+      skipLine();
+    }
+
+
+    show(" The multiples of 3 and 5 up to 100 are: ");
+
+    skipLine();
+
+    var number = 1;
+
+    while(number <= 100) {
+
+      if(number % 3 === 0 && number % 5 === 0) {
+        show("FIZZBUZZ");
+        skipLine();
+
+      } else if(number % 3 == 0) {
+        show("FIZZ");
+        skipLine();
+
+      } else if (number % 5 == 0) {
+          show("BUZZ");
+          skipLine();
+
+      } else {
+        show(number);
+        skipLine();
+  }
+      number++;
+    }
+
+
+    show("END");
+
+  </script>

@@ -1,0 +1,67 @@
+  <!DOCTYPE html>
+    <html>
+
+    <head>
+      <meta charset="utf-8">
+      <title>Age Dog</title>
+    </head>
+
+    <body>
+      <h1 id="title" align="centered-image">
+
+        Calculate the age equivalent to the human age of your dog!
+
+      </h1>
+
+      <input id="idadeDog"/> <br><br>
+
+      <input id="pequeno" type="radio" name="preferences" value="porte pequeno">
+        Small Size <br>
+
+      <input id="medio" type="radio" name="preferences" value="porte medio">
+        Medium Size <br>
+
+      <input id="grande" type="radio" name="preferences" value="porte grande">
+        Large Size <br><br>
+
+      <button>Calculate your dog's age!</button><br>
+
+      <br>
+
+      <img id="image" class="centered-image image-responsive" src="cachorro.jpeg" 
+      alt="dog" width="400" height="400">
+
+      <script>
+        
+        function dogAge(idade, tamanho) {
+
+          var idadeDog = document.getElementById("idadeDog").value;
+
+          var dogPequeno = (2 * 12.5) + (idadeDog - 2) * 4.5;
+          var dogMedio = (2 * 10.5) + (idadeDog - 2) * 5.7 ;
+          var dogGrande = (2 * 9) + (idadeDog - 2) * 8;
+
+
+          if (document.getElementById("pequeno").checked){
+            mensagem = "If your dog is small, does he have:" + Math.round(dogPequeno)  + " years old.";
+          } else if(document.getElementById("medio").checked){
+            mensagem = "If your dog is medium, does he have: " + Math.round(dogMedio) + " years old.";
+          } else if(document.getElementById("grande").checked){
+            mensagem = "If your dog is large, does he have: " + Math.round(dogGrande) + " years old.";
+          }
+
+          
+          alert(mensagem);
+
+          idadeDog.value = "";
+
+        }
+
+        var button = document.querySelector("button");
+
+        button.onclick = dogAge;
+        
+      </script>
+    </body>
+
+    </html>

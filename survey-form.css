@@ -1,0 +1,84 @@
+body {
+  font-family: 'Montserrat', sans-serif; 
+}
+
+header {
+  background: linear-gradient(to right, #EBE8E7, #7A77B9);     
+  padding: 20px 0;
+}
+
+footer{
+  text-align: center;
+  background: linear-gradient(to right, #EBE8E7, #7A77B9);;
+  padding: 40px 0;
+}
+
+.copyright {
+  color: #000000;
+  font-size: 13px;
+}
+
+/*css formulário*/
+
+form {
+  margin: 40px 0;
+}
+
+form label, form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.form-foto {
+  width: 18%;
+  padding: 20px;
+  box-shadow: 10px 10px 10px 0 #7A77B9;
+}
+
+.corDeFundo-formulario {
+  background:linear-gradient(#FEFEFE,#888888);
+}
+
+.form-alinhamento   {
+  padding: 5em 0;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0px;
+  background: #7A77B9;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+
+}
+
+.enviar:hover {
+  background: #9400D3;
+  transform: scale(1.1);
+}
+
+.category {
+  font-size: 30px;
+  font-weight: bold;
+  color: #7A77B9;
+  text-align: center;
+}

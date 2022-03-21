@@ -1,0 +1,85 @@
+    <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Vivian's Page</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="survey-form.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+      </head>
+
+      <header>
+        <img src="logo-Vivian.png">
+      </header>
+
+      <body>
+
+        <main>
+
+          <h1 class="category">Survey Form Project</h1>
+          <img class="form-foto" src="cinema-form.jpeg">
+          <p><br>Thanks for ansewring this Survey Form about Films and Series!</p>
+
+          <h2 class="category">Personal Details</h2>
+
+              <form class="form-alinhamento">  
+                <label for="nomesobrenome">Full Name</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>   
+                <label for="email">Email</label>
+                <input type="text" id="email" class="input-padrao" required placeholder="seudominio@dominio.com">   
+                <label for="age">Age</label>
+                <input type="text" id="age" class="input-padrao" required placeholder="xx">
+
+          <h2 class="category">Preferences</h2>
+
+                <fieldset>
+                  <legend><br>Do you prefer whatch films or series?<br></legend>
+                  <label for="radio-films"><input type="radio" name="preferencia" value="filmes"  id="radio-films">Filmes</label>
+                  <label for="radio-series"><input type="radio" name="preferencia" value="series" id="radio-series">Series</label>       
+                </fieldset>
+
+                <fieldset>
+                  <legend><br>What kind of filmes or series do you prefer?<br></legend>
+                    <select>
+                      <option>Action</option>
+                      <option>Animation</option>
+                      <option>Comedy</option>
+                      <option>Drama</option>
+                      <option>Documentary</option>
+                      <option>Musical</option>
+                      <option>Sci-Fy</option>
+                      <option>Thriller</option>
+                      <option>Western</option>
+                      <option>Other</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                  <legend><br>How often do you whatch films or series<br></legend>
+                  <label for="radio-everyday"><input type="radio" name="frequencia" value="everyday"  id="radio-everyday">Everyday</label>
+                  <label for="radio-everyweek"><input type="radio" name="frequencia" value="everyweek" id="radio-everyweek">Everyweek</label> 
+                  <label for="radio-days"><input type="radio" name="frequencia" value="quinzena" id="radio-days">Every 15 days</label>
+                  <label for="radio-month"><input type="radio" name="frequencia" value="month" id="radio-month">Once a month</label>
+                  <label for="radio-year"><input type="radio" name="frequencia" value="year" id="radio-year">A few times per year</label>      
+                </fieldset>
+
+                      <label for="mensagem"><br>Which Film or Series did you watch and recommended to a friend?<br><br>
+                      </label>
+                      <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required>
+                      </textarea>
+                      <label><br><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+
+                      <input type="submit" value="Enviar Formulário" class="enviar">
+
+              </form>
+        </main>
+      <footer>
+
+          <img src="logo-Vivian.png">
+          <p class="copyright">&copy; Copyright Vivian Azevedo 2021</p>
+
+        </footer>
+      </body>
+
+      </html>

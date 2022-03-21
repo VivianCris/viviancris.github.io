@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+
+<p>Click the button below and see your lucky number! =)</p>
+
+<button>Click here!</button>
+
+<script>
+  
+//function created that displays a random number from 1 to 50.
+
+function clickHere() {
+  
+  var randomNumber = Math.round(Math.random() * 50);
+  document.write("Your lucky number is: " + randomNumber);
+}
+
+var button = document.querySelector("button");
+button.onclick = clickHere;
+
+</script>
