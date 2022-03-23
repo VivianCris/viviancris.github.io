@@ -1,25 +1,29 @@
-<script>
-/*price per week/7 = price per day
-price per day x 365 = price per year
-price per year /12 = price per month*/
+<meta charset="utf-8">
 
-function skipLine() {
+  <h1>Calculate your rent per month</h1>
 
-    document.write("<br>");
-  }
+  <input>
 
-  function show(phrase) {
+  <button>Calculate</button>
 
-    document.write(phrase);
-    skipLine();
+  <script>
 
-}
+    /*price per week/7 = price per day
+      price per day x 365 = price per year
+      price per year /12 = price per month*/
 
-function rentPerMonth(month) {
-  return (Math.round(((month / 7) * 365) / 12));
-}
+    var input = document.querySelector("input");
+    
+    function rentPerMonth() {
+      
+        document.write("Your rent is "+ (Math.round(((input.value / 7) * 365) / 12)) + " dollars.") ;
+        
+    }
 
-rentPerMonth();
+    var button = document.querySelector("button");
+    button.onclick = rentPerMonth;
+    
+  </script>
 
 
 </script>
