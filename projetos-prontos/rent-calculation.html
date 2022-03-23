@@ -3,10 +3,23 @@
 price per day x 365 = price per year
 price per year /12 = price per month*/
 
+function skipLine() {
+
+    document.write("<br>");
+  }
+
+  function show(phrase) {
+
+    document.write(phrase);
+    skipLine();
+
+}
+
 function rentPerMonth(month) {
   return (Math.round(((month / 7) * 365) / 12));
 }
 
 rentPerMonth();
+
 
 </script>

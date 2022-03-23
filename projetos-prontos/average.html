@@ -1,12 +1,22 @@
-  <script>
-    //Type 5 numbers and at the end show the sum and average.
+ <script>
+      //Type 5 numbers and at the end show the sum and average.
 
-    var control = 1;
-    var userNumber = 0;
-    var userSum = 0;
-    var userAverage = 0;
-    
+      var control = 1;
+      var userNumber = 0;
+      var userSum = 0;
+      var userAverage = 0;
+      
+  function skipLine() {
 
+    document.write("<br>");
+  }
+
+  function show(phrase) {
+
+    document.write(phrase);
+    skipLine();
+
+  }
     while(control <= 5) {
       userNumber = parseInt(prompt("Type a number"));
 
@@ -16,11 +26,25 @@
 
       control++; 
     }
+    
+    skipLine();
 
-    console.log(userSum);
+    show("Sum of numbers entered");
+
+    skipLine();
+
+    document.write(userSum);
+
+    skipLine();
 
     userAverage = userSum / 5;
     
-    console.log(userAverage);
-    
-  </script>
+    skipLine();
+
+    show("Average of numbers");
+
+    skipLine();
+
+    document.write(userAverage);
+  
+</script>

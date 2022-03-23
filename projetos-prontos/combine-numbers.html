@@ -3,6 +3,17 @@
   <script>
 
   //print combinations 1 to 6.
+  function skipLine() {
+
+    document.write("<br>");
+  }
+
+  function show(phrase) {
+
+    document.write(phrase);
+    skipLine();
+
+  }
 
   function printNumbers() { 
     
@@ -17,6 +28,10 @@
     }
   }
 
+  show("Print combinations 1 to 6.");
+
+  skipLine();
+  
   printNumbers();
 
   </script> 
