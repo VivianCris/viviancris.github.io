@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+
+<h1>Type two numbers to multiplies</h1>
+
+<p>Enter the first number</p>
+
+<input type="number" id="first-number"/>
+
+<p>Enter the second number</p>
+
+<input type="number" id = "second-number"/>
+
+<button>Result</button>
+
+<script>
+
+  function skipLine() {
+    document.write("<br> <br>")
+  }
+
+  function show(phrase) {
+
+    document.write(phrase);
+    skipLine();
+  }
+
+
+function multiplies() {
+  var firstNumberEntered = document.querySelector("#first-number").value;
+
+  var secondNumberEntered = document.querySelector("#second-number").value;
+
+  show(firstNumberEntered + " X " + secondNumberEntered + " = " + firstNumberEntered
+   * secondNumberEntered + "<br><br>");
+}
+
+
+var button = document.querySelector("button");
+button.onclick = multiplies;
+
+</script>
