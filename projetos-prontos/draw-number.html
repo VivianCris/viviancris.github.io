@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<script>
+  var MAXIMUM_VALUE = 10 ;
+
+  function skipLine() {
+    document.write("<br><br>");
+  }
+
+  function show(frase) {
+    document.write(frase);
+    skipLine();
+  }
+
+  function drawNumber(){
+    return Math.round(Math.random() * MAXIMUM_VALUE);
+  }
+
+  function showNumbers() {
+    var meter = 1;
+    var sortition = drawNumber();
+
+    while (sortition2 != sortition) {
+
+      var sortition2 = drawNumber();
+
+      show("The first number drawn was: " + sortition);
+      show("The second number drawn was: " + sortition2);
+      skipLine();
+
+      if(sortition == sortition2) {
+        show("The numbers are the same!" );
+        show(" you tried " + meter + " times!");
+      } else {
+        show("The numbers are different!" );
+        show("attempt number: " + meter);
+      }
+
+      meter++;
+      skipLine();
+    }
+  }
+
+showNumbers();
+show("END");
+
+</script>
